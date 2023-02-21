@@ -1,0 +1,17 @@
+﻿@model Bolge
+@{
+    ViewBag.Title = Model.BolgeAd + " Hakkında Bilgi";
+}
+
+<h1>@Model.BolgeAd</h1>
+
+<div class="list-group">
+    @foreach (var item in Model.Sehirler)
+    {
+        <a class="list-group-item list-group-item-action" asp-action="SehirBilgi" asp-route-slug="@item.Slug">
+            @item.SehirAd
+        </a>
+    }
+</div>
+
+<a asp-action="Index" class="btn btn-primary mt-2">&larr; Anasayfaya Dön</a>

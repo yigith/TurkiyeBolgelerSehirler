@@ -1,4 +1,5 @@
 global using TurkiyeBolgelerSehirler.Helpers;
+global using TurkiyeBolgelerSehirler.Data;
 using Microsoft.EntityFrameworkCore;
 using TurkiyeBolgelerSehirler.Data;
 
